@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 html, body{
     height: 100%;
     width:100%;
@@ -28,6 +35,8 @@ a{
 
 .menu ul li{
     padding: 20px 40px;
+    -webkit-transition: all 0.35s ease;
+    -o-transition: all 0.35s ease;
     transition: all 0.35s ease;
     border-radius: 15px;
 }
@@ -40,19 +49,31 @@ a{
 }
 .nav{
     position: relative;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 nav div .ul{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 .dautien{
     position: absolute;
     background-color: rgba(0, 0, 0, 0.1);
-    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+            transform: translateX(0%);
     top: 100%;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     text-align: left;
     border-radius: 10px;
     display: none;
@@ -62,11 +83,17 @@ nav div .ul{
 .thuhai{
     position: absolute;
     background-color: rgba(0, 0, 0, 0.1);
-    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+            transform: translateX(0%);
     top: 100%;
     text-align: left;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     border-radius: 10px;
     display: none;
     z-index: 1010;
@@ -90,11 +117,33 @@ nav div .ul{
     position: relative;
     width: 270px;
     z-index: 999;
-    animation-name: cua;
-    animation-duration: 30s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: ease-in-out;
+    -webkit-animation-name: cua;
+            animation-name: cua;
+    -webkit-animation-duration: 30s;
+            animation-duration: 30s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+}
+@-webkit-keyframes cua {
+    0%{
+        -webkit-transform: translateX(0px);
+    }
+    25%{
+        -webkit-transform: translateX(240%);
+    }
+    50%{
+        -webkit-transform: translateY(300px);
+    }
+    75%{
+        -webkit-transform: translateX(100%);
+    }
+    100%{
+        -webkit-transform: translate3d(240%,300px,0px);
+    }
 }
 @keyframes cua {
     0%{
@@ -119,27 +168,59 @@ nav div .ul{
     position: relative;
     width: 500px;
     z-index: 999;
-    animation-name: muc;
-    animation-duration: 40s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: ease-in-out;
+    -webkit-animation-name: muc;
+            animation-name: muc;
+    -webkit-animation-duration: 40s;
+            animation-duration: 40s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+}
+@-webkit-keyframes muc {
+    0%{
+        -webkit-transform: translateX(0px);
+                transform: translateX(0px);
+    }
+    25%{
+        -webkit-transform: translateX(100%);
+                transform: translateX(100%);
+    }
+    50%{
+        -webkit-transform: translate3d(240%,-100px,0px);
+                transform: translate3d(240%,-100px,0px);
+    }
+    75%{
+        -webkit-transform: translate3d(0%,-200px,0px);
+                transform: translate3d(0%,-200px,0px);
+    }
+    100%{
+        -webkit-transform: translate3d(240%,0%,0px);
+                transform: translate3d(240%,0%,0px);
+    }
 }
 @keyframes muc {
     0%{
-        transform: translateX(0px);
+        -webkit-transform: translateX(0px);
+                transform: translateX(0px);
     }
     25%{
-        transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+                transform: translateX(100%);
     }
     50%{
-        transform: translate3d(240%,-100px,0px);
+        -webkit-transform: translate3d(240%,-100px,0px);
+                transform: translate3d(240%,-100px,0px);
     }
     75%{
-        transform: translate3d(0%,-200px,0px);
+        -webkit-transform: translate3d(0%,-200px,0px);
+                transform: translate3d(0%,-200px,0px);
     }
     100%{
-        transform: translate3d(240%,0%,0px);
+        -webkit-transform: translate3d(240%,0%,0px);
+                transform: translate3d(240%,0%,0px);
     }
 }
 
@@ -152,27 +233,59 @@ nav div .ul{
     position: relative;
     width: 250px;
     z-index: 999;
-    animation-name: camap;
-    animation-duration: 30s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: ease-in-out;
+    -webkit-animation-name: camap;
+            animation-name: camap;
+    -webkit-animation-duration: 30s;
+            animation-duration: 30s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+}
+@-webkit-keyframes camap {
+    0%{
+        -webkit-transform: translateX(0%);
+                transform: translateX(0%);
+    }
+    25%{
+        -webkit-transform: translate3d(100%,-420px,0px);
+                transform: translate3d(100%,-420px,0px);
+    }
+    50%{
+        -webkit-transform: translate3d(250%,70px,0px);
+                transform: translate3d(250%,70px,0px);
+    }
+    75%{
+        -webkit-transform: translate3d(400%,-400px,0px);
+                transform: translate3d(400%,-400px,0px);
+    }
+    100%{
+        -webkit-transform: translate3d(410%,-100px,0px);
+                transform: translate3d(410%,-100px,0px);
+    }
 }
 @keyframes camap {
     0%{
-        transform: translateX(0%);
+        -webkit-transform: translateX(0%);
+                transform: translateX(0%);
     }
     25%{
-        transform: translate3d(100%,-420px,0px);
+        -webkit-transform: translate3d(100%,-420px,0px);
+                transform: translate3d(100%,-420px,0px);
     }
     50%{
-        transform: translate3d(250%,70px,0px);
+        -webkit-transform: translate3d(250%,70px,0px);
+                transform: translate3d(250%,70px,0px);
     }
     75%{
-        transform: translate3d(400%,-400px,0px);
+        -webkit-transform: translate3d(400%,-400px,0px);
+                transform: translate3d(400%,-400px,0px);
     }
     100%{
-        transform: translate3d(410%,-100px,0px);
+        -webkit-transform: translate3d(410%,-100px,0px);
+                transform: translate3d(410%,-100px,0px);
     }
 }
 
@@ -181,27 +294,59 @@ nav div .ul{
     position: relative;
     width: 250px;
     z-index: 999;
-    animation-name: bachtuoc;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: ease-in-out;
+    -webkit-animation-name: bachtuoc;
+            animation-name: bachtuoc;
+    -webkit-animation-duration: 20s;
+            animation-duration: 20s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+}
+@-webkit-keyframes bachtuoc{
+    0%{
+        -webkit-transform: translateX(0%);
+                transform: translateX(0%);
+    }
+    25%{
+        -webkit-transform: translate3d(300%,-420px,0px);
+                transform: translate3d(300%,-420px,0px);
+    }
+    50%{
+        -webkit-transform: translate3d(350%,0px,0px);
+                transform: translate3d(350%,0px,0px);
+    }
+    75%{
+        -webkit-transform: translate3d(200%,-300px,0px);
+                transform: translate3d(200%,-300px,0px);
+    }
+    100%{
+        -webkit-transform: translate3d(310%,-100px,0px);
+                transform: translate3d(310%,-100px,0px);
+    }
 }
 @keyframes bachtuoc{
     0%{
-        transform: translateX(0%);
+        -webkit-transform: translateX(0%);
+                transform: translateX(0%);
     }
     25%{
-        transform: translate3d(300%,-420px,0px);
+        -webkit-transform: translate3d(300%,-420px,0px);
+                transform: translate3d(300%,-420px,0px);
     }
     50%{
-        transform: translate3d(350%,0px,0px);
+        -webkit-transform: translate3d(350%,0px,0px);
+                transform: translate3d(350%,0px,0px);
     }
     75%{
-        transform: translate3d(200%,-300px,0px);
+        -webkit-transform: translate3d(200%,-300px,0px);
+                transform: translate3d(200%,-300px,0px);
     }
     100%{
-        transform: translate3d(310%,-100px,0px);
+        -webkit-transform: translate3d(310%,-100px,0px);
+                transform: translate3d(310%,-100px,0px);
     }
 }
 
@@ -213,27 +358,59 @@ nav div .ul{
     position: relative;
     width: 250px;
     z-index: 999;
-    animation-name: rua;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: ease-in-out;
+    -webkit-animation-name: rua;
+            animation-name: rua;
+    -webkit-animation-duration: 20s;
+            animation-duration: 20s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+}
+@-webkit-keyframes rua {
+    0%{
+        -webkit-transform: translateX(0%);
+                transform: translateX(0%);
+    }
+    25%{
+        -webkit-transform: translate3d(300%,0px,0px);
+                transform: translate3d(300%,0px,0px);
+    }
+    50%{
+        -webkit-transform: translate3d(350%,-400px,0px);
+                transform: translate3d(350%,-400px,0px);
+    }
+    75%{
+        -webkit-transform: translate3d(200%,-300px,0px);
+                transform: translate3d(200%,-300px,0px);
+    }
+    100%{
+        -webkit-transform: translate3d(100%,-100px,0px);
+                transform: translate3d(100%,-100px,0px);
+    }
 }
 @keyframes rua {
     0%{
-        transform: translateX(0%);
+        -webkit-transform: translateX(0%);
+                transform: translateX(0%);
     }
     25%{
-        transform: translate3d(300%,0px,0px);
+        -webkit-transform: translate3d(300%,0px,0px);
+                transform: translate3d(300%,0px,0px);
     }
     50%{
-        transform: translate3d(350%,-400px,0px);
+        -webkit-transform: translate3d(350%,-400px,0px);
+                transform: translate3d(350%,-400px,0px);
     }
     75%{
-        transform: translate3d(200%,-300px,0px);
+        -webkit-transform: translate3d(200%,-300px,0px);
+                transform: translate3d(200%,-300px,0px);
     }
     100%{
-        transform: translate3d(100%,-100px,0px);
+        -webkit-transform: translate3d(100%,-100px,0px);
+                transform: translate3d(100%,-100px,0px);
     }
 }
 
@@ -242,26 +419,58 @@ nav div .ul{
     position: relative;
     width: 250px;
     z-index: 999;
-    animation-name: botkhi;
-    animation-duration: 30s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: ease-in-out;
+    -webkit-animation-name: botkhi;
+            animation-name: botkhi;
+    -webkit-animation-duration: 30s;
+            animation-duration: 30s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+}
+@-webkit-keyframes botkhi {
+    0%{
+        -webkit-transform: translateX(0%);
+                transform: translateX(0%);
+    }
+    25%{
+        -webkit-transform: translate3d(100%,-400px,0px);
+                transform: translate3d(100%,-400px,0px);
+    }
+    50%{
+        -webkit-transform: translate3d(150%,-200px,0px);
+                transform: translate3d(150%,-200px,0px);
+    }
+    75%{
+        -webkit-transform: translate3d(300%,-400px,0px);
+                transform: translate3d(300%,-400px,0px);
+    }
+    100%{
+        -webkit-transform: translate3d(100%,-200px,0px);
+                transform: translate3d(100%,-200px,0px);
+    }
 }
 @keyframes botkhi {
     0%{
-        transform: translateX(0%);
+        -webkit-transform: translateX(0%);
+                transform: translateX(0%);
     }
     25%{
-        transform: translate3d(100%,-400px,0px);
+        -webkit-transform: translate3d(100%,-400px,0px);
+                transform: translate3d(100%,-400px,0px);
     }
     50%{
-        transform: translate3d(150%,-200px,0px);
+        -webkit-transform: translate3d(150%,-200px,0px);
+                transform: translate3d(150%,-200px,0px);
     }
     75%{
-        transform: translate3d(300%,-400px,0px);
+        -webkit-transform: translate3d(300%,-400px,0px);
+                transform: translate3d(300%,-400px,0px);
     }
     100%{
-        transform: translate3d(100%,-200px,0px);
+        -webkit-transform: translate3d(100%,-200px,0px);
+                transform: translate3d(100%,-200px,0px);
     }
 }
