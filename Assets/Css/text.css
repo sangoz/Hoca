@@ -73,10 +73,10 @@ nav div .ul{
 }
 
 .hoconca nav .menu ul li:nth-child(1):hover .dautien{
-    display: block;
+    display: -webkit-block;
 }
 .hoconca nav .menu ul li:nth-child(2):hover .thuhai{
-    display: block;
+    display: -webkit-block;
 }
 .loa .thuhai ul li audio source{
     z-index: 1111;
@@ -86,31 +86,31 @@ nav div .ul{
 
 /* Trung */
 /* Animation con cua */
-#cua{
+#-webkit-cua{
     position: relative;
     width: 270px;
     z-index: 999;
-    -webkit-animation-name: cua;
-    -webkit-animation-duration: 30s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-direction: alternate;
-    -webkit-animation-timing-function: ease-in-out;
+    animation-name: cua;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
 }
-@-webkit-keyframes cua {
+@keyframes cua {
     0%{
-        transform: translateX(0px);
+        -webkit-transform: translateX(0px);
     }
     25%{
-        transform: translateX(240%);
+        -webkit-transform: translateX(240%);
     }
     50%{
-        transform: translateY(300px);
+        -webkit-transform: translateY(300px);
     }
     75%{
-        transform: translateX(100%);
+        -webkit-transform: translateX(100%);
     }
     100%{
-        transform: translate3d(240%,300px,0px);
+        -webkit-transform: translate3d(240%,300px,0px);
     }
 }
 
@@ -119,13 +119,13 @@ nav div .ul{
     position: relative;
     width: 500px;
     z-index: 999;
-    -webkit-animation-name: muc;
-    -webkit-animation-duration: 40s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-direction: alternate;
-    -webkit-animation-timing-function: ease-in-out;
+    animation-name: muc;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
 }
-@-webkit-keyframes muc {
+@keyframes muc {
     0%{
         transform: translateX(0px);
     }
