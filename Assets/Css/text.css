@@ -11,6 +11,10 @@ html, body{
     overflow: hidden;
     margin: 0;
   }
+#bg{
+    height: 100%;
+    width: 100%;
+}
 li{
     list-style: none;
 }
