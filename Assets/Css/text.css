@@ -231,7 +231,7 @@ nav div .ul{
 
 #muc{
     position: relative;
-    width: 250px;
+    width: 150px;
     -webkit-animation-name: muc;
             animation-name: muc;
     -webkit-animation-duration: 40s;
@@ -334,8 +334,8 @@ nav div .ul{
     position: absolute;
     top: 450px;
     left: -700px;
-    width: 800px;
-    z-index: 100;
+    width: 600px;
+    z-index: 999;
     -webkit-animation-name: camap;
             animation-name: camap;
     -webkit-animation-duration: 20s;
