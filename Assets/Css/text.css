@@ -231,7 +231,7 @@ nav div .ul{
 
 #muc{
     position: relative;
-    width: 150px;
+    width: 250px;
     -webkit-animation-name: muc;
             animation-name: muc;
     -webkit-animation-duration: 40s;
@@ -334,8 +334,8 @@ nav div .ul{
     position: absolute;
     top: 450px;
     left: -700px;
-    width: 600px;
-    z-index: 999;
+    width: 800px;
+    z-index: 100;
     -webkit-animation-name: camap;
             animation-name: camap;
     -webkit-animation-duration: 20s;
@@ -347,35 +347,31 @@ nav div .ul{
             animation-timing-function: linear;
 }
 @-webkit-keyframes camap {
-    0% {
-    opacity: 0.5;   
+    0% {  
     }
     80% {
-    opacity: 1;
     }
     100% {
     -webkit-transform: translateX(2100px);
             transform: translateX(2100px);
-    opacity: 1;
     }
 }
 @keyframes camap {
     0% {
-    opacity: 0.5;   
+      
     }
     80% {
-    opacity: 1;
+
     }
     100% {
     -webkit-transform: translateX(2100px);
             transform: translateX(2100px);
-    opacity: 1;
     }
 }
 
 #bachtuoc{
     position: absolute;
-    width: 500px;
+    width: 300px;
     bottom: 100%;
     left: -200px;
     z-index: 9;
