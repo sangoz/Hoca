@@ -119,7 +119,7 @@ nav div .ul{
 #cua{
     position: relative;
     width: 100px;
-    z-index: 200;
+    z-index: 9999;
     -webkit-animation-name: cua;
             animation-name: cua;
     -webkit-animation-duration: 40s;
